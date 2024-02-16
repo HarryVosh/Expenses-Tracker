@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Expense Tracker</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="logo.png">
+</head>
+<body>
+<header>
+	<h1>Expense Tracker App</h1>
+	<div class="input-section">
+		<label for="category-select">Category : </label>
+		<select id="category-select">
+			<option>--please  select--</option>
+			<option value="Food & Beverage">Food & Beverage</option>
+			<option value="Rent">Rent</option>
+			<option value="Transport">Transport</option>
+			<option value="Relaxing">Relaxing</option>
+		</select>
+		<label for="amount-input">Amount : </label>
+		<input type="number" id="amount-input">
+		<label for="date-input">Date : </label>
+		<input type="date" id="date-input">
+		<button id="add-btn">Add</button>
+	</div>
+</header>
+
+<section>
+	<div class="expense-list">
+		<h2>Expense List</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Category</th>
+					<th>Amount</th>
+					<th>Date</th>
+					<th>Delete</th>
+			    </tr>
+			</thead>
+			<tbody id="expense-table-body">
+				
+			</tbody>
+			<tfoot>
+				<tr>
+					<td>Total:</td>
+					<td id="total-amount"></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+</section>
+
+<footer>
+	<p>
+		Tracking your spending is often the first step to getting your finances in order. By understanding what you spend money on and just how much things cost, you can see exactly where your cash is going and areas where you can scale back.
+
+		It’s easy to make this part of your everyday routine thanks to expense tracker apps that help you manage your money on the go. These apps certainly overlap with budgeting apps, but while the latter provides a big-picture view of your finances, expense tracker apps put more of an emphasis on your spending. These apps usually categorize your expenses and help you get a good idea of your purchasing behavior.
+
+        CNBC Select set out to find which expense tracker apps are the best. We reviewed more than a dozen and narrowed down our list to the top ones, whether you want an app that easily captures all your transaction data, one that automates the expense reporting process at your job or one that holds you accountable by requiring you to manually input each one of your transactions. (See our methodology for more information on how we chose the best expense tracker apps.)
+	</p>
+</footer>
+
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
